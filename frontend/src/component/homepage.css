@@ -1,0 +1,163 @@
+.recipe-tile {
+  height: 95%;
+  width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* background-color: black  !important; */
+    /* transform: rotate(357deg) !important; */
+    z-index: 1 !important;
+  }
+
+  
+  /* @media only screen and (max-width : 768px) { 
+    .recipe-tile{
+      height: 30vh;
+      width: 80vw;
+    }
+  }
+  @media only screen and (max-width : 320px) { 
+    .recipe-tile{
+      height: 25vh;
+      width: 80vw;
+  
+    }
+  } */
+  @media only screen and (max-width : 320px) { 
+    .recipe-tile{
+    width: 100%;
+  
+    }
+    .recipe-grid{
+    
+      padding: inherit !important;
+    }
+   
+  } 
+  @media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px) 
+{
+  .box{
+    padding-left:50px !important;
+  }
+}
+@media only screen   
+and (min-width: 1030px)   
+and (max-width: 1366px)  
+{ 
+
+  .box{
+    padding-left:50px !important;
+  }
+} 
+@media only screen   
+and (min-width: 1370px)  
+and (max-width: 1605px)  
+{ 
+  .box{
+    padding-left:50px !important;
+  }
+}  
+
+  .recipe-grid{
+  position: relative !important;
+  padding-bottom: 40px;
+  padding-left: 30px !important;
+}
+
+
+
+.pagination{
+  display: flex;
+    margin: 30px;
+    height: 50px;
+    background-color: aliceblue;
+    align-items: center;
+    /* width: 190px; */
+    justify-content: flex-end;
+}
+.cook-btn{
+background-color: #b13d2f !important;
+border-radius: 10px 10px !important;
+padding-top:10px !important;
+font-family: 'lobster';
+}
+
+.cook-btn:hover{
+  background-color: white !important;
+  border: 2px solid #76170c !important;
+  border-radius: 10px 10px !important;
+  color: #76170c !important;
+  font-weight: 500 !important;
+}
+   .rsvegnonveg {
+    width: 20px !important;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #75da43;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.nheadingrs {
+  /* font-size: 28px !important; */
+  line-height: 36px !important;
+  font-weight: 700 !important;
+}
+
+.rsvegnonveg .veg {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #75da43;
+  display: block;
+  margin: 5px auto;
+}
+
+.recipe-tile {
+  position: relative;
+  /* width: 50%; */
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #919191;
+  /* background-color: rgba(0, 0, 0, 0.6);  */
+}
+
+.recipe-tile:hover .overlay {
+  opacity: 1;
+  
+}
+.recipe-tile:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* transform: rotate(358deg) !important; */
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
