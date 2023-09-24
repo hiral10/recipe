@@ -4,7 +4,7 @@ import Homepage from './component/homepage';
 import Recipe from './component/recipe';
 import { Route, Routes } from "react-router-dom";
 export const config = {
-  endpoint: `http://localhost:8082/v1`,
+  endpoint: `https://recipe-kcpn.onrender.com/v1`,
 };
 function App() {
   return (
