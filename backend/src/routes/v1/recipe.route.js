@@ -34,6 +34,7 @@ router.get("/:recipeId",recipeController.getRecipeById);
 router.post('/',recipeController.postMealFilter)
 router.post('/uploadimg',upload.single('file'), async function(req, res) {
   const url = req.protocol + '://' + req.get('host')
+  console.log(req.protocol,req.get('host'))
   const user = new Image({
       _id: new mongoose.Types.ObjectId(),
       image: url + '/images/' + req.file.filename
